@@ -225,6 +225,14 @@ http://localhost:8080/v3/api-docs
 
 ---
 
+## Sviluppo
+
+- Generato il progetto tramite jhipster
+- Creato il file school.jdl tramite JDL studio e importato all'interno del progetto per la generazione entità
+- Modificato il file SecurityConfiguration per rendere pubblica l'api per la lista delle classi
+- Resa pubblica ( per comodità di sviluppo), l'api v3/api-docs per recuperare il json da importare su Postman
+- Aggiunto un file per liquibase per il precaricamento delle classi
+
 ## Note
 
 Alcuni dettagli notati ma non implementati per questo mvp per mancanza di tempo
