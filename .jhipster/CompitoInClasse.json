@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20260211191016"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "data",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "materia",
+      "fieldType": "Materia",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "STORIA,ITALIANO,INGLESE,MATEMATICA"
+    },
+    {
+      "fieldName": "risultato",
+      "fieldType": "Double",
+      "fieldValidateRules": ["required", "min", "max"],
+      "fieldValidateRulesMax": "10",
+      "fieldValidateRulesMin": "1"
+    }
+  ],
+  "jpaMetamodelFiltering": true,
+  "name": "CompitoInClasse",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "alunno",
+      "relationshipName": "alunno",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
