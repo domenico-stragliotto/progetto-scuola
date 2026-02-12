@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="20260211191017" author="jhipster">
+      <preConditions onFail="MARK_RAN">
+        <tableExists tableName="classe"/>
+        <sqlCheck expectedResult="0">SELECT COUNT(*) FROM classe</sqlCheck>
+      </preConditions>
+        <!-- Caricamento delle 25 classi: dalla Prima alla Quinta per sezioni A, B, C, D, E -->
+
+        <!-- Prima A-E -->
+        <insert tableName="classe">
+            <column name="id" valueNumeric="1"/>
+            <column name="numero" valueNumeric="1"/>
+            <column name="sezione" value="A"/>
+            <column name="note" value="Classe Prima Sezione A"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="2"/>
+            <column name="numero" valueNumeric="1"/>
+            <column name="sezione" value="B"/>
+            <column name="note" value="Classe Prima Sezione B"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="3"/>
+            <column name="numero" valueNumeric="1"/>
+            <column name="sezione" value="C"/>
+            <column name="note" value="Classe Prima Sezione C"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="4"/>
+            <column name="numero" valueNumeric="1"/>
+            <column name="sezione" value="D"/>
+            <column name="note" value="Classe Prima Sezione D"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="5"/>
+            <column name="numero" valueNumeric="1"/>
+            <column name="sezione" value="E"/>
+            <column name="note" value="Classe Prima Sezione E"/>
+        </insert>
+
+        <!-- Seconda A-E -->
+        <insert tableName="classe">
+            <column name="id" valueNumeric="6"/>
+            <column name="numero" valueNumeric="2"/>
+            <column name="sezione" value="A"/>
+            <column name="note" value="Classe Seconda Sezione A"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="7"/>
+            <column name="numero" valueNumeric="2"/>
+            <column name="sezione" value="B"/>
+            <column name="note" value="Classe Seconda Sezione B"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="8"/>
+            <column name="numero" valueNumeric="2"/>
+            <column name="sezione" value="C"/>
+            <column name="note" value="Classe Seconda Sezione C"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="9"/>
+            <column name="numero" valueNumeric="2"/>
+            <column name="sezione" value="D"/>
+            <column name="note" value="Classe Seconda Sezione D"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="10"/>
+            <column name="numero" valueNumeric="2"/>
+            <column name="sezione" value="E"/>
+            <column name="note" value="Classe Seconda Sezione E"/>
+        </insert>
+
+        <!-- Terza A-E -->
+        <insert tableName="classe">
+            <column name="id" valueNumeric="11"/>
+            <column name="numero" valueNumeric="3"/>
+            <column name="sezione" value="A"/>
+            <column name="note" value="Classe Terza Sezione A"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="12"/>
+            <column name="numero" valueNumeric="3"/>
+            <column name="sezione" value="B"/>
+            <column name="note" value="Classe Terza Sezione B"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="13"/>
+            <column name="numero" valueNumeric="3"/>
+            <column name="sezione" value="C"/>
+            <column name="note" value="Classe Terza Sezione C"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="14"/>
+            <column name="numero" valueNumeric="3"/>
+            <column name="sezione" value="D"/>
+            <column name="note" value="Classe Terza Sezione D"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="15"/>
+            <column name="numero" valueNumeric="3"/>
+            <column name="sezione" value="E"/>
+            <column name="note" value="Classe Terza Sezione E"/>
+        </insert>
+
+        <!-- Quarta A-E -->
+        <insert tableName="classe">
+            <column name="id" valueNumeric="16"/>
+            <column name="numero" valueNumeric="4"/>
+            <column name="sezione" value="A"/>
+            <column name="note" value="Classe Quarta Sezione A"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="17"/>
+            <column name="numero" valueNumeric="4"/>
+            <column name="sezione" value="B"/>
+            <column name="note" value="Classe Quarta Sezione B"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="18"/>
+            <column name="numero" valueNumeric="4"/>
+            <column name="sezione" value="C"/>
+            <column name="note" value="Classe Quarta Sezione C"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="19"/>
+            <column name="numero" valueNumeric="4"/>
+            <column name="sezione" value="D"/>
+            <column name="note" value="Classe Quarta Sezione D"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="20"/>
+            <column name="numero" valueNumeric="4"/>
+            <column name="sezione" value="E"/>
+            <column name="note" value="Classe Quarta Sezione E"/>
+        </insert>
+
+        <!-- Quinta A-E -->
+        <insert tableName="classe">
+            <column name="id" valueNumeric="21"/>
+            <column name="numero" valueNumeric="5"/>
+            <column name="sezione" value="A"/>
+            <column name="note" value="Classe Quinta Sezione A"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="22"/>
+            <column name="numero" valueNumeric="5"/>
+            <column name="sezione" value="B"/>
+            <column name="note" value="Classe Quinta Sezione B"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="23"/>
+            <column name="numero" valueNumeric="5"/>
+            <column name="sezione" value="C"/>
+            <column name="note" value="Classe Quinta Sezione C"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="24"/>
+            <column name="numero" valueNumeric="5"/>
+            <column name="sezione" value="D"/>
+            <column name="note" value="Classe Quinta Sezione D"/>
+        </insert>
+        <insert tableName="classe">
+            <column name="id" valueNumeric="25"/>
+            <column name="numero" valueNumeric="5"/>
+            <column name="sezione" value="E"/>
+            <column name="note" value="Classe Quinta Sezione E"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

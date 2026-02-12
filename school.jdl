@@ -1,0 +1,41 @@
+// Definizione entità per la scuola elementare
+
+entity Classe {
+    numero Integer required min(1) max(5)
+    sezione String required maxlength(1) pattern(/[A-E]/)
+    note String maxlength(500)
+}
+
+entity Alunno {
+    nome String required maxlength(100)
+    cognome String required maxlength(100)
+    dataNascita LocalDate required
+}
+
+entity CompitoInClasse {
+    data LocalDate required
+    materia Materia required
+    risultato Double required min(1) max(10)
+}
+
+enum Materia {
+    STORIA,
+    ITALIANO,
+    INGLESE,
+    MATEMATICA
+}
+
+// Relazioni
+relationship ManyToOne {
+    Alunno{classe(numero) required} to Classe
+}
+
+relationship OneToMany {
+    Alunno to CompitoInClasse{alunno}
+}
+
+// Opzioni
+dto * with mapstruct
+service * with serviceImpl
+paginate Classe, Alunno, CompitoInClasse with pagination
+filter Classe, Alunno, CompitoInClasse
