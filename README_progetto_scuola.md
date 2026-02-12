@@ -24,7 +24,7 @@ L'applicazione sarà disponibile su: `http://localhost:8080`
 
 ---
 
-## 🔐 Credenziali di Accesso
+## Credenziali di Accesso
 
 ### Utenti Predefiniti
 
@@ -112,19 +112,6 @@ curl -X POST http://localhost:8080/api/register \
   }'
 ```
 
-**Payload:**
-
-```json
-{
-  "login": "docente.rossi",
-  "email": "mario.rossi@scuola.it",
-  "password": "password123",
-  "firstName": "Mario",
-  "lastName": "Rossi",
-  "langKey": "it"
-}
-```
-
 **Utente creato!** Può fare login con `docente.rossi` / `password123`
 
 ---
@@ -191,19 +178,6 @@ curl -X POST http://localhost:8080/api/alunnos \
       "id": 1
     }
   }'
-```
-
-**Payload:**
-
-```json
-{
-  "nome": "Giulia",
-  "cognome": "Bianchi",
-  "dataNascita": "2015-03-15",
-  "classe": {
-    "id": 1
-  }
-}
 ```
 
 ### Step 5: Crea Compito in Classe per l'Alunno
